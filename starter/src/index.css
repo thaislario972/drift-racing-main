@@ -1,0 +1,25 @@
+body,
+#root {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  background-image: url("/shared-assets/images/examples/lizard.png");
+}
+
+.bouton{
+  width: 100px;
+  height: 60px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #d1d1d1;
+  color: #000000;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.bouton:hover{
+  background-color: #bbf2ff;
+}
