@@ -233,8 +233,33 @@ export const Car = ({  selectedCar, resetSignal }: CarProps) => {
     // Force moteur avant/arrière
     let engine = 0;
     if (isUp) engine = phys.engine;
-    else if (isDown) engine = phys.brake;
-    if (engine) car.applyForce([forward[0] * engine, forward[1] * engine]);
+    else if (isDown) engine = phys.brake * 0.4;
+    if (engine)
+      car.applyForce([
+        forward[0] * engine,
+        forward[1] * engine
+      ]);
+
+// Réduit la glisse latérale en marche arrière
+    if (isDown) {
+
+      const lateralVelocity =
+          car.velocity[0] * right[0] +
+          car.velocity[1] * right[1];
+
+      car.applyForce([
+
+        -right[0] *
+        lateralVelocity *
+        15,
+
+        -right[1] *
+        lateralVelocity *
+        15
+
+      ]);
+
+    }
 
 
     // Steering
