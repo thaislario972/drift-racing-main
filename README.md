@@ -61,4 +61,4 @@ npm run preview
 
 ## Author
 
-Developed by Gaelle Valony
+Developed by Thaïs Lario
