@@ -39,7 +39,7 @@ const PHYSICS_SETTINGS = {
     width: 100, height: 40, mass: 3,
     steer: 70 * (Math.PI / 180),
     wheel: 100,
-    engine: 280, brake: -600,
+    engine: 280, brake: -800,
     grip: { drift: 0.6, normal: 3, lateral: 2 },
     drag: { factor: 0.5, max: 1000 },
     drift: { factor: 0.3, min: 300 },
@@ -49,7 +49,7 @@ const PHYSICS_SETTINGS = {
     width: 105, height: 45, mass: 3.5,
     steer: 65 * (Math.PI / 180),       // angle un peu plus lent
     wheel: 50,                        // rayon un peu plus grand
-    engine: 360, brake: -550,          // plus de puissance, freinage moins brutal
+    engine: 360, brake: -650,          // plus de puissance, freinage moins brutal
     grip: { drift: 0.5, normal: 2.8, lateral: 1.8 },  // un peu moins de grip latéral = glisse plus stable
     drag: { factor: 0.55, max: 1000 },
     drift: { factor: 0.30, min: 320 }, // drift plus progressif, déclenchement plus doux
@@ -59,7 +59,7 @@ const PHYSICS_SETTINGS = {
     width: 95, height: 38, mass: 2.8,
     steer: 70 * (Math.PI / 180),       // direction plus vive
     wheel: 120,                         // rayon de braquage plus court
-    engine: 280, brake: -650,          // moteur moins puissant que Supra, frein plus agressif
+    engine: 280, brake: -750,          // moteur moins puissant que Supra, frein plus agressif
     grip: { drift: 0.7, normal: 3.1, lateral: 2.2 },  // plus de grip latéral = transitions plus rapides
     drag: { factor: 0.45, max: 1000 },
     drift: { factor: 0.35, min: 280 }, // drift rapide à déclencher

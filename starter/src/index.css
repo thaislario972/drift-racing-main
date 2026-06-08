@@ -23,3 +23,231 @@ body,
 .bouton:hover{
   background-color: #bbf2ff;
 }
+
+.game-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 110px;
+  background: black;
+}
+
+.burger-button {
+  position: absolute;
+  left: 25px;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  font-size: 32px;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
+.logo-zone {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-zone img {
+  width: auto;
+  height: 95px;
+}
+
+.logo-zone h1 {
+  font-size: 30px;
+  color: white;
+}
+
+.side-menu {
+  position: absolute;
+  top: 110px;
+  left: 25px;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: black;
+  border: 1px solid white;
+  padding: 15px;
+}
+
+.side-menu button {
+  background: white;
+  color: black;
+  border: none;
+  padding: 12px 18px;
+  cursor: pointer;
+}
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  position: relative;
+  width: 80%;
+  max-width: 950px;
+  background: #090909;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 30px;
+  color: white;
+}
+
+.modal-content h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: white;
+  color: black;
+  border: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.selection-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.selection-card {
+  background: #111;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 18px;
+  padding: 20px;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+}
+
+.selection-card:hover {
+  border-color: #00b8db;
+  transform: translateY(-4px);
+}
+
+.selection-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.selection-card h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.selection-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.selection-card li {
+  font-size: 15px;
+  margin-bottom: 6px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.logo-text p {
+  color: rgba(255, 255, 255);
+  margin: 0;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+}
+
+.stats-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.stat-line {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.stat-line span {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.75);
+  text-align: left;
+}
+
+.stat-bar {
+  width: 100%;
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.15);
+  overflow: hidden;
+}
+
+.stat-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #cf1a1a, #ffdd00, #11c600);
+}
+
+.stat-header{
+
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+  margin-bottom:6px;
+
+}
+
+.real-stat{
+
+  color:rgba(
+          255,
+          255,
+          255,
+          0.65
+  );
+
+  font-size:12px;
+
+}
+
+.circuit-description{
+
+  color:rgba(
+          255,
+          255,
+          255,
+          0.7
+  );
+
+  font-size:14px;
+
+  margin-top:8px;
+
+}
