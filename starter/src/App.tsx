@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Car } from "./components/Car/Car";
 import Level from "./components/Level/Level";
 import logo from './assets/DS_LOGO.png';
@@ -14,6 +14,20 @@ const App = () => {
     const handleReset = () => {
         setResetCounter(prev => prev + 1);
     }
+
+    useEffect(() => {
+        const handleKeyDown = (event: KeyboardEvent) => {
+            if (event.key === "Escape") {
+                handleReset();
+            }
+        };
+
+        window.addEventListener("keydown", handleKeyDown);
+
+        return () => {
+            window.removeEventListener("keydown", handleKeyDown);
+        };
+    }, []);
 
   return (
       <>
